@@ -20,7 +20,7 @@ function drawPyramid(height) {
         // build up a string for this row
         var rowStr1 = "";
         for (var i = 0; i < numSpaces; i++) {
-            rowStr1 += ".";
+            rowStr1 += "\u00A0";
         }
         for (var i = 0; i < numBricks; i++) {
             rowStr1 += "#";
@@ -30,6 +30,7 @@ function drawPyramid(height) {
         var name = document.createTextNode(rowStr1);
         para.appendChild(name);
         document.getElementById("pyramid").appendChild(para);
+
 
     }
 }
